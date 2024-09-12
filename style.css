@@ -1,0 +1,164 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    color: white;
+
+}
+.login
+{
+    position: relative;
+    height: 100vh;
+    display: grid;
+    align-items: center;
+    
+}
+.loginbackground-img
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.login-form
+{
+    position: relative;
+    background-color:black;
+    border: 2px solid white;
+    margin-inline: 1.5rem;
+    padding: 2.5rem 1.5rem;
+    border-radius: 10px;
+    backdrop-filter: blur(8px);
+    width: 30%;
+    margin-left: 35%;
+    
+    
+}
+.login-tile
+{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10%;
+}
+.login-content, .login-box
+{
+    display: grid;
+}
+.login-content
+{
+    row-gap: 1.75rem;
+    margin-bottom: 1.5rem;
+}
+.login-box
+{
+    grid-template-columns: max-content 1fr;
+    align-items: center;
+    column-gap: .75rem;
+    border-bottom: 2px solid white;
+}
+.login-icon
+.login-eye
+{
+    font-size: 1.25rem;
+}
+.login-input
+{
+    width: 100%;
+    padding-block: .6rem;
+    background-color: transparent;
+    color: white;
+    position: relative;
+    z-index: 1;
+    border: none;
+    outline: none;
+}
+.login-box-input
+{
+    position: relative;
+}
+.login-label
+{
+    position: absolute;
+    left: 0;
+    top: 11px;
+    font-weight: bold;
+    transition: top .3s, font-size .3s;
+}
+.login-eye
+{
+    position: absolute;
+    right: 0;
+    top: 16px;
+    z-index: 1;
+    cursor: pointer;
+}
+.login-box:nth-child(2) input
+{
+    padding-right: 1.8rem;
+}
+.login-checkbox
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+}
+.login-check-label, .login-forget
+{
+    font-size: small;
+}
+.login-check-label
+{
+    margin-bottom: 2rem;
+}
+.login-check-input
+{
+    height: 15px;
+    width: 15px;
+}
+.login-forget
+{
+    text-decoration: none;
+}
+.login-forget:hover
+{
+    text-decoration: underline;
+}
+.login-button
+{
+    width: 100%;
+    color: black;
+    padding: 0.75rem;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
+.login-register
+{
+    text-align: center;
+}
+.login-register a
+{
+    color: white;
+    font-weight: lighter;
+    text-decoration: none;  
+}
+.login-register a:hover
+{
+    text-decoration: underline;
+}
+.login-input:focus + .login-label
+{
+    top: -12px;
+    font-size: smaller;
+}
+.login-input:not(:placeholder-shown).login-input:not(:focus) + .login-label
+{
+    top: -12px;
+    font-size: smaller;
+}

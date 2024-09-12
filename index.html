@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="icon" href="image/en.jpeg">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div  class="login">
+    <img src="image/login back.jpg" alt="login" class="loginbackground-img">
+    <form action="" class="login-form">
+        <h1 class="login-tile">Login</h1>
+        <div class="login-content">
+            <div class="login-box">
+                <i class="fa-solid fa-user login-icon"></i>
+                <div class="login-box-input">
+                    <input type="text" required class="login-input" placeholder="" id="loginemail">
+                    <label for="" class="login-label">Email</label>
+                </div>
+            </div>
+            <div class="login-box">
+                <i class="fa-solid fa-lock login-icon"></i>
+                <div  class="login-box-input">
+                    <input type="password" required class="login-input" id="loginpass" placeholder="">
+                    <label for="" class="login-label">Password</label>
+                    <i onclick="toggle()" class="fa-solid fa-eye login-eye" id="logineye"></i>
+                </div>
+            </div>
+        </div>
+        <div class="login-checkbox">
+            <div class="login-check-group">
+                <input type="checkbox" class="login-check-input">
+                <label for="" class="login-check-label">Remember Me</label>
+            </div>
+            <a href="" class="login-forget" onclick="loginfg()">Forget Password ?</a>
+        </div>
+        <button onclick="func()" class="login-button">
+            Login
+        </button>
+        <div class="login-register">
+            <p>Don't have on account <a href="#">Register</a></p>
+        </div>
+    </form>
+  </div>
+    <script src="index.js"></script>
+</body>
+</html>
